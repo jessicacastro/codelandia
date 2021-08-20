@@ -1,0 +1,106 @@
+@import url('../../styles/variables.css');
+
+header {
+  background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  max-width: 900px;
+  width: 90%;
+  margin: 41px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav h4 {
+  color: var(--white-color);
+  font-size: 36px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.input-search {
+  position: relative;
+  margin-top: 70px;
+}
+
+.input-search img {
+  position: absolute;
+  padding: 18px 15px;
+}
+
+.input-search input {
+  width: 100%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 0;
+  padding-left: 50px;
+  outline: 0;
+  color: var(--white-color);
+  opacity: 0.5;
+  font: 500 22px 'Inter', sans-serif;
+}
+
+.input-search input::placeholder {
+  color: var(--white-color);
+  opacity: 0.5;
+  font-size: 22px;
+  line-height: 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  background-color: var(--background-gray);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container article {
+  background-color: var(--white-color);
+  padding: 20px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.container article div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.container div span {
+  font-size: 16px;
+  color: var(--text-light-gray);
+}
+
+.container h5 {
+  font-size: 24px;
+  text-align: left;
+  color: var(--text-dark-gray);
+  margin-bottom: 8px;
+}
+
+.container p {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-light-gray);
+  text-align: left;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0;
+  }
+}
